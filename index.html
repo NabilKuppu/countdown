@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishu's Birthday</title>
+    <link rel="shortcut icon" href="./Images/Nishu.jpg" type="image/x-icon" />
+    <style>
+      * general styling */ :root {
+        --smaller: 0.75;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-color: #b7b7b7;
+      }
+
+      .container {
+        color: #0cb3c9a4;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: normal;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+      }
+
+      li span {
+        display: block;
+        font-size: 4.5rem;
+      }
+
+      .emoji {
+        display: none;
+        padding: 1rem;
+      }
+
+      .emoji span {
+        font-size: 4rem;
+        padding: 0 0.5rem;
+      }
+      .images {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+      }
+
+      @media all and (max-width: 768px) {
+        h1 {
+          font-size: calc(1.5rem * var(--smaller));
+          text-align: center;
+        }
+
+        li {
+          font-size: calc(1.125rem * var(--smaller));
+          text-align: center;
+        }
+
+        li span {
+          font-size: calc(3.375rem * var(--smaller));
+          text-align: center;
+        }
+        .images {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="countdown">
+        <ul>
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+      <div id="content" class="emoji">
+        <span>🥳</span>
+        <span>🎉</span>
+        <span>🎂</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
