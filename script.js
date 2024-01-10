@@ -19,3 +19,5 @@ let x = setInterval(() => {
     document.getElementById("content").style.display = "block";
   }
 }, 1000);
+
+//Try to learn different merge
